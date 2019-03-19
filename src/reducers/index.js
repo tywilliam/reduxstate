@@ -1,9 +1,10 @@
 import { combineReducers } from 'redux';
 import postReducer from './postReducer';
-
+import usersReducer from './usersReducer';
 
 export default combineReducers({
-    posts: postReducer
+    posts: postReducer,
+    users: usersReducer
 });
 
 
@@ -17,7 +18,7 @@ export default combineReducers({
  * 
  * Replacing an elment | state.map(el => el === 'hi) ? 'bye' : el)
  * 
- * Updating a property | { ...state, name: 'Sam' }
+ * Updating a property | { ...state, name: 'Sam'ß }
  * Adding a property | {...state, age: 30}
  * Removing a property | { ...state, age: undefined}
  * over write with ....
